@@ -1,0 +1,126 @@
+ /* ----------------------  ESTILO GERAL ----------------------------- */
+
+ html {
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ #app {
+     display: flex;  /* estilo flex coloca os objetos lado a lado */
+     flex-direction: column; /* define a dirção do flex, neste caso será em coluna */
+ }
+ .panel {
+     margin: 10px;
+     padding: 20px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* red, blue, green e transparencia */
+ }
+
+
+
+ /* -----------------------  ÁREA DE PONTUAÇÃO  ---------------------------- */
+ .scores {
+    display: flex;
+ }
+ .score {
+     flex: 1; /*permite que o objeto ocupe a tela inteira de acordo com o tamanho da tela*/
+     display: flex;
+     flex-direction: column;
+     justify-content: center; /*alinhamento do texto*/
+     align-items: center; /* alinhamento dos itens*/
+ }
+ .score h1 {
+     font-weight: 300; /* definir a expessura da letra*/
+     font-size: 1.6rem; /* definir o tamanho da letra*/
+ }
+.life-bar {
+    width: 80%; /* tamanho da barra */
+    height: 20px; /* altura da barra */
+    border: 1px solid #AAA; /* cor da barra */
+}
+.life-bar .life {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: green;
+}
+.life-bar .life.danger {
+    background-color: red;
+}
+
+/*------------------------------- ÁREA DE RESULTADO -------------------*/
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: 1,3rem;
+    font-weight: 600;
+}
+.result .win {
+    color: green;
+}
+.result .lose {
+    color: red;
+}
+
+/*------------------------------ CONTROLE DO JOGO ----------------------------*/
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 5px 10px; /* alinhar botões*/
+    margin: 0px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.new-game {
+    background-color: rgb(65, 65, 153);
+    color: white;
+}
+.attack {
+    background-color: rgb(126, 3, 3);
+    color: white;
+}
+.especial-attack {
+    background-color: rgb(197, 197, 1);
+    color: black;
+}
+.heal {
+    background-color: green;
+    color: white;
+}
+.give-up {
+    background-color: #bbb;
+    color: black;
+}
+
+/* --------------------ÁREA DOS LOGS ---------------------------- */
+
+.logs ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.logs ul li{
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px;
+    padding: 3px 0px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.player {
+     background-color: #4253afaa;
+     color: #fff;
+}
+.monster{
+    background-color: #e51c23aa;
+    color: #fff;    
+}
